@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Tiss.Core.Product>
+
+@{
+    Layout = null;
+}
+
+@foreach (var product in Model)
+{
+    <tr>
+        <td>@product.Id</td>
+        <td>@product.Price ₽</td>
+        <td>@product.Count</td>
+    </tr>
+}
+
